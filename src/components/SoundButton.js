@@ -22,10 +22,10 @@ export default function SoundButton({id, name, src}) {
 
     return (
         <button className="drum-pad btn fw-bold"
-                key={id}
+                id={id}
                 onClick={() => setKey([...id])}>
             {id.toUpperCase()}
-            <audio className="clip" ref={audioElement} src={src} id={id} type="audio/mpeg" />
+            <audio className="clip" ref={audioElement} src={src} id={id.toUpperCase()} type="audio/mpeg" />
         </button>
     )
 }
