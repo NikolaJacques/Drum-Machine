@@ -4,7 +4,7 @@ import ConsolePanel from './ConsolePanel'
 export default function Container() {
     
     return (
-        <div className="row" id="drum-element">
+        <div className="row" id="drum-machine">
             <ButtonGrid />
             <ConsolePanel />
         </div>

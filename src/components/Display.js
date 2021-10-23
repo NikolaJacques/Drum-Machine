@@ -6,6 +6,6 @@ export default function Display() {
     const { name } = useContext(NameContext)
     
     return ( 
-        <div className="row justify-content-center py-2 display">{name}</div>
+        <div className="row justify-content-center py-2 display" id="display">{name}</div>
     )
 }

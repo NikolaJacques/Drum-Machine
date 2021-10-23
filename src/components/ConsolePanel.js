@@ -16,7 +16,7 @@ export default function ConsolePanel() {
     }, [power])
     
     return (
-        <div className="col-xl-6 d-flex flex-column align-items-center spacer-utility py-2 px-5" id="display">
+        <div className="col-xl-6 d-flex flex-column align-items-center spacer-utility py-2 px-5">
             <PowerSwitch />
             <Display />
             <VolumeSlider />
