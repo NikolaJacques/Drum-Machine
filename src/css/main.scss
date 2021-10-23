@@ -1,0 +1,58 @@
+// custom variables here
+    $primary: #808080;
+    $secondary: #ffc107;
+    $background: #8d8d8d;
+    $container: #b3b3b3;
+    
+@import "C:/Users/jacqu/OneDrive/Desktop/Courses/FreeCodeCamp - Front-end Libraries/Projects/Drum Machine/drum-machine/node_modules/bootstrap/scss/bootstrap.scss";
+
+// custom sass here
+html {
+    font-size:24px;
+}
+
+body {
+    background-color: $background;
+    color: black;
+    font-weight: bold;
+}
+
+.container {   
+    background-color: $container;
+    border: 5px solid $yellow;
+}
+
+.button-grid {
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:0.5em;
+}
+
+.display{
+    min-height: 2.5rem;
+    width: 100%;
+    background-color: $primary;
+    color:inherit;
+    text-align: center;
+}
+
+.btn,
+.btn:focus {
+    outline: none;
+    background-color: $primary;
+    box-shadow: 2px 2px 5px black;
+}
+
+.btn:hover {
+    background-color: $background;
+    transition: 0.5s ease;
+}
+
+.spacer-utility > * + * {
+    margin-top: 1rem;
+}
+
+.highlight {
+    background-color: $secondary !important;
+}
