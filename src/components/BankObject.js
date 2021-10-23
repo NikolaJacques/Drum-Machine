@@ -58,11 +58,11 @@ export const BankObject = [[
         path:'.\\sounds\\bank_1\\Elevator_Ding.mp3'
     },
     {
-        soundName:'Factwhistle',
+        soundName:'Factory Whistle',
         path:'.\\sounds\\bank_1\\factwhistle.mp3'
     },
     {
-        soundName:'Fire Cracker',
+        soundName:'Firecracker',
         path:'.\\sounds\\bank_1\\Firecrac4.mp3'
     },
     {
