@@ -41,9 +41,9 @@ export function Context(props) {
     // event handlers
     const playEventHandler = (element, name) => {
         if(power){
+            setName(name)
             element.play()
             .then(() => {
-                setName(name)
                 // highlight button
                 element.parentElement.className += ' highlight'
                 setTimeout(() => {
@@ -60,7 +60,7 @@ export function Context(props) {
     }
     
     const setKeyEvent = (e) => {
-        setKey([...e.key])
+        setKey([e.key])
     }
     
     useEffect(() => {

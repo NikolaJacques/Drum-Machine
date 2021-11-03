@@ -14,7 +14,8 @@ export default function SoundButton({id, name, src}) {
     
     useEffect(() => {
         const parent = audioElement.current.parentElement
-        if(parent.id===key[0]){
+        console.log(key)
+        if(parent.id===key[0]||parent.id.toUpperCase()===key[0]){
             playEventHandler(audioElement.current, name)
         }
     // eslint-disable-next-line react-hooks/exhaustive-deps
