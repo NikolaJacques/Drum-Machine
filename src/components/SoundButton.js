@@ -14,7 +14,6 @@ export default function SoundButton({id, name, src}) {
     
     useEffect(() => {
         const parent = audioElement.current.parentElement
-        console.log(key)
         if(parent.id===key[0]||parent.id.toUpperCase()===key[0]){
             playEventHandler(audioElement.current, name)
         }
